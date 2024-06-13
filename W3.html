@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro</title>
+    <style>
+        *{
+            margin: 0;
+            font-family:sans-serif;
+            font-weight:500;
+        }
+        .join{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background-color: white;
+        }
+        .j1{
+            width:100%;
+            height: 60px;
+            display: flex;
+        }
+        .o1{
+            width: 5%;
+            height: 50%;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        .o2{
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .o3{
+            width: 250px;
+            height: 40px;
+            margin-left: 20px;
+            margin-top: 10px;
+            border-radius: 20px;
+            border: 1px solid black ;
+            display: flex;
+        }
+        .ser{
+            border-radius: 10px;
+            width: 70%;
+            margin-left: 5%;
+            border: none;
+        }
+        .img{
+            border-radius: 45%;
+            width: 20%;
+            height: 35px;
+            margin-top: 5px
+        }
+        .o4{
+            width: 250px;
+            height: 55px;
+            margin-left: 10px;
+            margin-top: 5px;
+            display: flex;
+        }
+        .btn1{
+            width:50% ;
+            height: 45px;
+            margin-left:30px ;
+            border-radius: 30px;
+            border: none;
+            color: white;
+            background-color: #04AA6D;
+        }
+        .btn2{
+            width: 50%;
+            height: 45px;
+            margin-left:20px ;
+            border-radius: 30px;
+            border: none;
+            background-color: rgb(197, 227, 197);
+        }
+        .btn2:hover{
+            background-color: rgb(59, 136, 71);
+            color: white;
+        }
+        .j2{
+            width: 100%;
+            height: 30px;
+            background-color: #282A35;
+            display: flex;
+        }
+        .t{
+            width: 10px;
+            margin-left: 5px;
+        }
+        .ti{
+            color: white;
+            width: 80px;
+            margin-top:5px ;
+        }
+        .tib{
+            color: white;
+            width: 160px;
+            margin-left: 10px;
+            margin-top:5px ;
+        }
+        .tib2{
+            color: white;
+            width: 100px;
+            margin-left: 10px;
+            margin-top:5px ;
+        }
+        .tis{
+            color: white;
+            width: 50px;
+            margin-top:5px ;
+        }
+        .one{
+            width:100% ;
+            height: auto;
+            display: flex;
+            margin-top: 90px;
+        }
+        .l{
+            width: 17%;
+            height: 530px;
+            background-color: #E7E9EB;
+            overflow-y: scroll;
+            position: fixed;
+        }
+        .it{
+            width: 90%;
+            height: auto;
+            margin-top: 10px;
+            margin-left: 20px;
+            line-height: 25px;
+        }
+        .h{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .ti:hover,.tib:hover,.tib2:hover,.tis:hover{
+            background-color: #04AA6D;
+        }
+        .r{
+            width: 83%;
+            height: auto;
+            display: flex;
+            margin-left: 250px;
+        }
+        .rir{
+            width: 15%;
+            height: 400px;
+            margin-left: 900px;
+            position: fixed;
+        }
+        .ril{
+            width: 82%;
+            height: 200px;
+        }
+        .adc{
+            width: 80%;
+            height: auto;
+            margin-left: 10%;
+            margin-top: 10px;
+            font-size: small;
+        }
+        .th{
+            width: 95%;
+            height: 150px;
+            margin-top: 30px;
+            margin-left: 5%;
+            font-size: large;
+        }
+        .tb{
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+        .tb1{
+            width: 50%;
+            height: auto;
+        }
+        .thbn1{
+            width: 20%;
+            height: 50px;
+            margin-top: 20px;
+            background-color: #04AA6D;
+            border-radius: 10px;
+            border: none;
+            color: white;
+        }
+        .tb2{
+            width: 50%;
+            height: auto;
+        }
+        .thbn2{
+            width: 20%;
+            height: 50px;
+            margin-top: 20px;
+            margin-left: 300px;
+            background-color: #04AA6D;
+            border-radius: 10px;
+            border: none;
+            color: white;
+        }
+        .adt{
+            width: 80%;
+            height: 100px;
+            margin-top: 20px;
+            margin-left: 10%;
+        }
+        .para1{
+            width: 100%;
+            height: 200px;
+            padding-top: 40px;
+            background-color: #D9EEE1;
+            
+        }
+        .p1{
+            margin-left: 30px;
+            line-height: 40px;
+        }
+        .p1b1{
+            width: 200px;
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 30px;
+            color: white;
+            background-color: #04AA6D;
+            border-radius: 10px;
+            border: none;
+        }
+        .cont{
+            width: 100%;
+            height: 150px;
+            margin-top: 30px;
+            line-height: 40px;
+        }
+        .smpl{
+            width: 100%;
+            height: 450px;
+            line-height: 50px;
+            background-color: #D9EEE1;
+        }
+        .si{
+            width: 90%;
+            height: 300px;
+            margin-left: 5%;
+            font-size: small;
+            line-height: 27px;
+            border-left: 4px solid #04AA6D;
+            background-color: white;
+        }
+        .sp{
+            margin-left: 30px;
+        }
+        .marg{
+            margin-left: 20px;
+        }
+        .bro{
+            color: brown;
+        }
+        .red{
+            color: red;
+        }
+        .blu{
+            color: blue;
+        }
+        .sib{
+            width: 150px;
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 40px;
+            color: white;
+            background-color: #04AA6D;
+            border-radius: 10px;
+            border: none;
+        }
+        .sp2{
+            margin-top: 30px;
+            margin-left: 30px;
+            font-weight: 900;
+        }
+        .cont2{
+            width: 97%;
+            height: auto;
+            margin-top: 30px;
+            margin-left: 3%;
+            line-height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="join">
+        <div class="j1">
+            <div class="o1">
+                <img src="https://www.computerhope.com/jargon/w/w3schools.png" width="100%" height="50px">
+            </div>
+            <div class="o2">
+                <p>Tutorials</p>
+            </div>
+            <div class="o2">
+                <p>Exercises</p>
+            </div>
+            <div class="o2">
+                <p>Get certified</p>
+            </div>
+            <div class="o2">
+                <p>Servies</p>
+            </div>
+            <div class="o3">
+                <input class="ser" type="search" placeholder="Search....">
+                <img class="img" src="https://www.shutterstock.com/image-vector/search-icon-vector-editable-eps10-260nw-1263924991.jpg" width="10%" height="20px">
+            </div>
+            <div class="o2">
+                <p>Jobs</p>
+            </div>
+            <div class="o2">
+                <p>Spaces</p>
+            </div>
+            <div class="o2">
+                <p>Certificates</p>
+            </div>
+            <div class="o4">
+                <button class="btn1"><b>SIGN UP</b></button>
+                <button class="btn2"><b>LOG IN</b></button>
+            </div>
+            
+        </div>
+        <div class="j2">
+                <div class="t">
+                </div>
+                <div class="ti">
+                    <h3>HTML</h3>
+                </div>
+                <div class="tis">
+                    <h3>CSS</h3>
+                </div>
+                <div class="tib">
+                    <h3>JAVASCRIPT</h3>
+                </div>
+                <div class="ti">
+                    <h3>SQL</h3>
+                </div>
+                <div class="ti">
+                    <h3>JAVA</h3>
+                </div>
+                <div class="tis">
+                    <h3>C</h3>
+                </div>
+                <div class="ti">
+                    <h3>C++</h3>
+                </div>
+                <div class="tis">
+                    <h3>C#</h3>
+                </div>
+                <div class="tib2">
+                    <h3>PYTHON</h3>
+                </div>
+                <div class="tib2">
+                    <h3>MYSQL</h3>
+                </div>
+                <div class="tib2">
+                    <h3>REACT</h3>
+                </div>
+                <div class="ti">
+                    <h3>PHP</h3>
+                </div>
+                <div class="tis">
+                    <h3>AI</h3>
+                </div>
+                <div class="tib">
+                    <h3>BOOTSTRAP</h3>
+                </div>
+                <div class="tib2">
+                    <h3>EXCEL</h3>
+                </div>
+                <div class="ti">
+                    <h3>AWS</h3>
+                </div>
+                <div class="ti">
+                    <h3>XML</h3>
+                </div>
+                <div class="tib">
+                    <h3>KOTLIN</h3>
+                </div>
+        </div>
+    </div>
+    <div class="one">
+        <div class="l">
+            <div class="h">
+                <h2>CSS Tutorial</h2>
+            </div>
+            <div class="it">
+                <p>
+                    CSS HOME<br>CSS Introduction<br>CSS Syntax<br>CSS Selectors<br>CSS How To<br>CSS Comments<br>CSS Colors<br>CSS Backgrounds<br>CSS Borders<br>CSS Margins<br>CSS Padding<br>CSS Height/Width<br>CSS Box Model<br>CSS Outline<br>CSS Text<br>CSS Fonts<br>CSS Icons<br>CSS Links<br>CSS Position<br>CSS Z-index<br>CSS Overflow<br>CSS Float<br>CSS Combinators<br>CSS Pseudo-class<br>CSS Pseudo-element<br>CSS Opacity<br>CSS Website Layout<br>
+                </p>
+            </div>
+            <div class="h">
+                <h2>CSS Advanced</h2>
+            </div>
+            <div class="it">
+                <p>
+                    CSS Advanced<br>CSS Rounded Corners<br>CSS Border Images<br>CSS Backgrounds<br>CSS Colors<br>CSS Color Keywords<br>CSS Gradients<br>CSS Shadows<br>CSS Text Effects<br>CSS Web Fonts<br>CSS 2D Transforms<br>CSS 3D Transforms<br>CSS Transitions<br>CSS Animations<br>CSS Tooltips<br>CSS Style Images<br>CSS Image Reflection<br>CSS object-fit<br>CSS Buttons<br>CSS Pagination<br>CSS Multiple Columns<br>CSS Media Queries<br>CSS Flexbox<br>
+                </p>
+            </div>
+            <div class="h">
+                <h2>CSS Responsive</h2>
+            </div>
+            <div class="it">
+                <p>
+                    RWD Intro<br>RWD Viewport<br>RWD Grid View<br>RWD Media Queries<br>RWD Images<br>RWD Videos<br>RWD Frameworks<br>RWD Templates
+                </p>
+            </div>
+        </div>
+
+        <div class="r">
+            <div class="ril">
+                <div class="adt">
+                    <img src="https://tpc.googlesyndication.com/simgad/8169744333071237861" width="100%" height="100px">
+                </div>
+                <div class="th">
+                    <h1>CSS Tutorial</h1>
+                    <div class="tb">
+                        <div class="tb1">
+                            <button class="thbn1"><b>HOME</b></button>
+                        </div>
+                        <div class="tb2">
+                            <button class="thbn2"><b>NEXT</b></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="para1">
+                    <p class="p1">CSS is the language we use to style an HTML document.<br>CSS describes how HTML elements should be displayed.<br>This tutorial will teach you CSS from basic to advanced.
+                    </p>
+                    <button class="p1b1"><b>Start learning CSS now >></b></button>
+                </div>
+                <div class="cont">
+                    <h2>Examples in Each Chapter</h2>
+                    <p>This CSS tutorial contains hundreds of CSS examples.<br>With our online editor, you can edit the CSS, and click on a button to view the result.</p>
+                </div>
+                <div class="smpl">
+                    <h2 class="sp">CSS Example</h2>
+                    <div class="si">
+                        <div class="marg">
+                            <span class="bro">body</span> {<br>
+                                <span class="red">background-color</span>: <span class="blu">lightblue</span>;<br>
+                            }<br>
+                            <span class="bro">h1</span> {<br>
+                                <span class="red">color</span>: <span class="blu">white</span>;<br>
+                                <span class="red">text-align</span>: <span class="blu">center</span>;<br>
+                            }<br>
+                            <span class="bro">p</span> {<br>
+                                <span class="red">font-family</span>: <span class="blu">verdana</span>;<br>
+                                <span class="red">font-size</span>: <span class="blu">20px</span>;<br>
+                            }
+                          </div>
+                    </div>
+                    <button class="sib"><b>Try it yourself >></b></button>
+                </div>
+                <h4 class="sp2">Click on the "Try it Yourself" button to see how it works.</h4>
+                <div class="cont2">
+                    <h2>CSS Examples</h2>
+                    <p>Learn from over 300 examples! With our editor, you can edit the CSS, and click on a button to view the result.</p>
+                </div>
+                <div class="cont2">
+                    <h2>Use the Menu</h2>
+                    <p>
+                        We recommend reading this tutorial, in the sequence listed in the menu.<br>If you have a large screen, the menu will always be present on the left.<br>If you have a small screen, open the menu by clicking the top menu sign ☰.
+                    </p>
+                </div>
+                <div class="cont2">
+                    <h2>CSS Templates</h2>
+                    <p>
+                        We have created some responsive W3.CSS templates for you to use.<br>
+                        You are free to modify, save, share, and use them in all your projects.</p>
+                </div>
+            </div>
+            <div class="rir">
+                <div class="adc">
+                    <p>ADVERTISEMENT</p>
+                <img src="https://tpc.googlesyndication.com/simgad/13819017744080435628" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
