@@ -1,0 +1,223 @@
+
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        .hedderimg{
+            width: 100%;
+            height: 100vh;
+            
+            background-image: url("assets/shutterstock_773955841\ \(8\).svg");
+        }
+        .navs{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .naventer{
+            width: 50%;
+            margin-left: 30%;
+        }
+        .fonts{
+            margin-left: 30%;
+        }
+        .backery{
+            width: 6%;
+        }
+        .headletter{
+            width: 70%;
+            margin-top: 10%;
+            margin-left: 15%;
+            font-size: 700%;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: white;
+            
+        }
+        .shop{
+            border: 2px black solid;
+            padding: 1%;
+            margin-left: 40%;
+            width: 15%;
+        }
+        .article{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: black;
+            width: 20%;
+            margin-left: 42%;
+            margin-top: 10%;
+        }
+        .article2{
+            color: black;
+            
+            margin-left: 37%;
+        }
+        .article3{
+            text-align: center;
+            margin-left: 25%;
+            width: 50%;
+        }
+        .section{
+            width: 80%;
+            margin-left: 9%;
+            margin-top: 5%;
+               
+        }
+        .sec2{
+            width: 60%;
+            height: 50vh;
+            
+        }
+        .setimg{
+            margin-left: 5%;
+            
+        }
+        .section2{
+            margin-left: 37%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .fourimg{
+            width: 40%;
+            text-align: center;
+            border: 20x solid black;
+        }
+        .imges{
+            width: 60%;
+            
+        }
+        .section3{
+            margin-top: 10%;
+            width: 80%;
+            margin-left: 10%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .sec3img{
+            transform: rotate(50deg);
+            margin-left: 20%;
+            margin-top: 30%;
+            
+
+        }
+        .sec3word{
+            width: 40%;
+            margin-left: 20%;
+        }
+        .videos{
+            
+            width: 80%;
+            margin-top: 5%;
+            margin-left: 8%;
+            margin-bottom: 3%;
+        }
+        .colorpattle{
+            background-color: rgb(233, 227, 218);
+        }
+        .sec4word{
+            margin-left: 30%;
+        }
+        .spn{
+            font-weight: 100;
+        }
+        .richard{
+            width: 50%;
+            margin-left: 5%;
+        }
+        .riword{
+            margin-left: 40%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            
+        }
+        .art{
+            margin-left: 20%;
+        }
+        .imgart{
+            width: 50%;
+            margin-left: 5%;
+        }
+        .art1{
+            width: 80%;
+            margin-left: 10%;
+        }
+        .upfoot{
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .upimg{
+            width: 15%;
+            height: 20vh;
+            margin-top: 10%;
+            margin-left: 15%;
+        }
+        .footend{
+            display: flex;
+            margin-top: 5%;
+            justify-content: space-evenly;
+        }
+        .footmain{
+            background-color: brown;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        @media screen and (max-width:1115px) {
+            .videos{
+                width: 10% ;
+                margin-left: 1%;
+            }
+            .navs{
+                width: 70%;
+            }
+            .headletter{
+                width: 50%;
+                margin-top: 10%;
+                margin-left: 15%;
+                font-size: 500%;
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+                color: white;
+                
+            }
+
+
+        }
+        @media screen and (max-width:990px) {
+            .videos{
+                display: none;
+            }
+            .sec2{
+                flex-direction: column !important;
+                width: 50%;
+            }
+            .fimg{
+                flex-direction: column !important;
+            }
+            .section2{
+                margin-top: 80%;
+            }
+            .fourimg{
+                margin-left: 30%;
+            }
+            .fimgs{
+                flex-direction: column;
+                margin-left: 30%;
+            }
+            .upfoot{
+                flex-direction: column;
+                margin-left: 30%;
+                width: 30%;
+            }
+            .fcolumn{
+                margin: 0;
+                flex-direction: column;
+            }
+            .art{
+                width: 50%;
+                flex-direction: column;
+                margin-left: 30%;
+            }
+    }
