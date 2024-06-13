@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mono</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%; 
+        }
+        .one{
+            width: 100%;
+            height: 650px;
+            background-image: url("https://monogramcc.com/static/9a0b554db1990565457610c5f83b3ad7/91943/shop_cta_xl_896f6b8270.webp");
+            background-size: 100% 100%;
+        }
+        .bg{
+          z-index: 2;
+        }
+        .navbar{
+          width: 98%;
+          margin-left:1%;
+          position: fixed;
+          top: 2%;
+          z-index: 10;
+        }
+        .two{
+          width: 30%;
+          height: 30%;
+          text-align: center;
+          color: #efc2b3;
+          position: absolute;
+          top: 40%;
+          left: 35%;
+        }
+        .co{
+            color: #efc2b3;
+        }
+        .c1{
+          width:550px;
+          border: none;
+          color: #1a2456;
+        }
+        .st{
+          width: 50%;
+          height: 30%;
+          color: #1a2456;
+          text-align: center;
+          letter-spacing: 3px;
+          position: absolute;
+          top: 290%;
+          left: 27%;
+        }
+        .stp{
+          font-size: larger;
+        }
+        .img1{
+          width: 100%;
+          height: 370px;
+          background-image:url('https://cdn.shopify.com/s/files/1/0974/7950/products/Everyday-Bundle-Mocks-final_1366x911_crop_center.jpg.webp?v=1660013247');
+          background-size: 100% 100%;
+        }
+        .img2{
+          width: 100%;
+          height: 370px;
+          background-image:url('https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_TravelerClosedBracket1_Monogram_May20204517_d3899632-1a43-425f-a16a-1d5b968810c7_1366x911_crop_center.jpg.webp?v=1623682377');
+          background-size: 100% 100%;
+        }
+        .img3{
+          width: 100%;
+          height: 370px;
+          background-image:url('https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_StudioClosedBracket1_Monogram_May20204507_548446cb-17c9-4fc2-8b12-ae1b1a308a7e_1366x911_crop_center.jpg.webp?v=1623269261');
+          background-size: 100% 100%;
+        }
+        .img4{
+          width: 100%;
+          height: 370px;
+          background-image:url('https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_MasterClosedBracket1_Monogram_May20204494_1366x911_crop_center.jpg.webp?v=1623682600');
+          background-size: 100% 100%;
+        }
+        .img5{
+          width:100% ;
+          height: 300px;
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/20221018_MonogramCC_Case_06_1366x911_crop_center.jpg.webp?v=1666726898');
+          background-size: 100% 100%;
+        }
+        .img6{
+          width:100% ;
+          height: 300px;
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_CoreBracket1_Monogram_May20204545_ccb8b10a-0772-448b-9857-a14fa83bd5b7_1366x911_crop_center.jpg.webp?v=1593651640');
+          background-size: 100% 100%;
+        }
+        .img7{
+          width:100% ;
+          height: 300px;
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_SliderHeroBracket1_Monogram_May20204536_8b0e1987-0315-491e-9951-a9404031b55a_1366x911_crop_center.jpg.webp?v=1593651879');
+          background-size: 100% 100%;
+        }
+        .img8{
+          width:100% ;
+          height: 300px;
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_KeysBracket1_Monogram_May20204548_c26eef0c-c95c-40e6-8fd3-abe1f59abfcd_1366x911_crop_center.jpg.webp?v=1593651769');
+          background-size: 100% 100%;
+        }
+        .img9{
+          width:100% ;
+          height: 300px;
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_OrbiterBracket1_Monogram_May20204542_50105ec2-8b68-4ed5-ac4e-ac261c36459c_1366x911_crop_center.jpg.webp?v=1593651849');
+          background-size: 100% 100%;
+        }
+        .img10{
+          width:100% ;
+          height: 300px;
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_DialHeroBracket1_Monogram_May20204539_375e79fb-32f0-447b-b606-3dd0ac8318f6_1366x911_crop_center.jpg.webp?v=1593651701');
+          background-size: 100% 100%;
+        }
+        .img11{
+          width:100% ;
+          height: 300px;
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Care-updated-traveler_1366x904_crop_center.jpg.webp?v=1633483052');
+          background-size: 100% 100%;
+        }
+
+        .ci{
+          width: 100%;
+          justify-content: space-between;
+        }
+        .t{
+          font-size:15px ;
+        }
+        .hc1{
+          width: 75%;
+        }
+        .hp1{
+          width: 25%;
+          height: 30px;
+          text-align: end;
+        }
+        .ps{
+          width: 8%;
+          height: 25px;
+          background-color: #ff8d6b;
+          font-weight: 500;
+          font-size: 13px;
+          text-align: center;
+        }
+        .ps1{
+          position: absolute;
+          top: 118%;
+          left: 41.7%;
+        }
+        .ps2{
+          position: absolute;
+          top: 118%;
+          left: 83%;
+        }
+        .ps3{
+          position: absolute;
+          top: 202%;
+          left: 41.7%;
+        }
+        .ps4{
+          position: absolute;
+          top: 202%;
+          left: 83%;
+        }
+        .cb1{
+          width:340px;
+          border: none;
+          color: #1a2456;;
+        }
+        .cb2{
+          width:340px;
+          border: none;
+          color: #1a2456;;
+        }
+        .cb3{
+          width: 28%;
+          margin-left: 130px;
+          border: none;
+          color: #1a2456;;
+        }
+        .ps5{
+          position: absolute;
+          top: 376%;
+          left: 27%;
+        }
+        .ps6{
+          position: absolute;
+          top: 376%;
+          left: 54.6%;
+        }
+        .ps7{
+          position: absolute;
+          top: 376%;
+          left: 82.2%;
+        }
+        .ps8{
+          position: absolute;
+          top: 448%;
+          left: 27%;
+        }
+        .ps9{
+          position: absolute;
+          top: 448%;
+          left: 54.6%;
+        }
+        .ps10{
+          position: absolute;
+          top: 448%;
+          left: 82.2%;
+        }
+        .ls{
+          width: 100%;
+          height: 300px;
+          font-size: small;
+          font-weight: 400;
+          background-color: #1a2456;
+          color: #efc2b3;
+        }
+        .e1{
+            border-radius: 10px;
+            width: 40%;
+            height: 35px;
+        }
+        .e2{
+            width:40% ;
+        }
+        .bn{
+          width: 80%;
+          height: 35px;
+          margin-top: 16px;
+          border-radius: 80px;
+          border: none;
+          background-color: #efc2b3;
+        }
+        .sp{
+          margin-top: 30px;
+        }
+        .img1:hover{
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Everyday-Bundle-Mocks-horizontal_1366x911_crop_center.jpg.webp?v=1668446709');
+        }
+        .img2:hover{
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_TravelerBracket1_Monogram_May2020_4561_30a35bd4-01b4-44db-894a-e06162d8ab77_1366x911_crop_center.jpg.webp?v=1668433146');
+        }
+        .img3:hover{
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_StudioBracket1_Monogram_May2020_4558_53685b21-b09f-45b0-85a2-180d6acfafac_1366x911_crop_center.jpg.webp?v=1668433210');
+        }
+        .img4:hover{
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_MasterBracket1_Monogram_May2020_4555_1366x911_crop_center.jpg.webp?v=1668433240');
+        }
+        .img5:hover{
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/20221018_MonogramCC_Case_02_1366x911_crop_center.jpg.webp?v=1666799808');
+        }
+        .img6:hover{
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_CoreBracket1_Monogram_May2020_4578_6683fd8e-be63-45bb-9fbd-dd82a4838db8_1366x911_crop_center.jpg.webp?v=1593651640');
+        }
+        .img7:hover{
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_SliderBracket1_Monogram_May2020_4565_f941e8d9-d194-47ee-a54a-79132f105e34_1366x911_crop_center.jpg.webp?v=1593651879');
+        }
+        .img8:hover{
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_KeysBracket1_Monogram_May2020_4571_43b65ca9-4fde-4f55-9f0e-32374554ce76_1366x911_crop_center.jpg.webp?v=1593651769');
+        }
+        .img9:hover{
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_OrbiterHero_Monogram_May2020_4568_3d64e8b3-71ce-441a-9fcd-2b054c423310_1366x911_crop_center.jpg.webp?v=1593651849');
+        }
+        .img10:hover{
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_DialBracket1_Monogram_May2020_4575_981a6401-f834-4094-9a6e-6cd7d0b374ca_1366x911_crop_center.jpg.webp?v=1593651701');
+        }
+        .img11:hover{
+          background-image: url('https://cdn.shopify.com/s/files/1/0974/7950/products/MONO_CONSOLE_CARE_STU_453eaa1a-02d9-4ba7-9d9a-8d05e2915f8f_1366x904_crop_center.jpg.webp?v=1633485492');
+        }
+        
+
+    </style>
+</head>
+<body>
+  <div class="one">   
+  </div>
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #1a2456;">
+    <div class="container-fluid">
+      <a class="co navbar-brand" href="javascript:void(0)">MONOGRAM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+              
+        </ul>
+        <div class="d-flex">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="co nav-link" href="javascript:void(0)">HOW ITS WORKS</a>
+            </li>
+            <li class="nav-item">
+              <a class="co nav-link" href="javascript:void(0)">WORKFLOW</a>
+            </li>
+            <li class="nav-item">
+              <a class="co nav-link" href="javascript:void(0)">DOWNLOAD</a>
+            </li>
+            <li class="nav-item">
+              <a class="co nav-link" href="javascript:void(0)">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="co nav-link" href="javascript:void(0)">SUPPORT</a>
+            </li>
+            <li class="nav-item">
+              <a class="co nav-link" href="javascript:void(0)">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="co nav-link" href="javascript:void(0)">USD</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="bg">
+    <div class="two">
+      <h1>A CONSOLE FOR</h1>
+      <h1>EVERY WORKFLOW</h1>
+      <h6 class="mt-3">Discover the perfect console for yours.</h6>
+    </div>
+
+    <div class="container mt-5 d-flex justify-content-around">
+      
+        <div class="card c1 c11">
+          <div class="img1"></div>
+          <!-- <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Everyday-Bundle-Mocks-final_1366x911_crop_center.jpg.webp?v=1660013247" alt="Card image" style="width:100%"> -->
+          <div class="ci card-body d-flex">
+            <div class="hc1">
+                <h4 class="card-title">MINI CONSOLE</h4>
+                <p class="t card-text">Ideal for everyday shortcuts.Adoptable for any workflow.</p>
+            </div>
+            <div class="hp1">
+               <a href="#" class="nav-link">$249</a>
+            </div>
+           
+          </div>
+        </div>
+        
+        <div class="card c1 c12">
+          <div class="img2"></div>
+            <!-- <img class="card-img-bottom" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_TravelerClosedBracket1_Monogram_May20204517_d3899632-1a43-425f-a16a-1d5b968810c7_1366x911_crop_center.jpg.webp?v=1623682377" alt="Card image" style="width:100%"> -->
+            <div class="ci card-body d-flex">
+                <div>
+                <h4 class="card-title">AUDIO CONSOLE</h4>
+                <p class="card-text">Ideal for music & audio.Adoptable for any workflow.</p>
+                </div>
+            <a href="#" class="nav-link">$499</a>
+            </div>
+        </div>
+    </div>
+      <div class="ps ps1">
+        <p>PRE-ORDER</p>
+      </div>
+      <div class="ps ps2">
+        <p>PRE-ORDER</p>
+      </div>
+
+      <div class="container mt-5 d-flex justify-content-around">
+        <div class="card c1 c13">
+          <div class="img3"></div>
+          <!-- <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_StudioClosedBracket1_Monogram_May20204507_548446cb-17c9-4fc2-8b12-ae1b1a308a7e_1366x911_crop_center.jpg.webp?v=1623269261" alt="Card image" style="width:100%"> -->
+          <div class="ci card-body d-flex">
+            <div>
+                <h4 class="card-title">PHOTO CONSOLE</h4>
+                <p class="card-text">Ideal for photo & video.Adoptable for any workflow.</p>
+            </div>
+            <a href="#" class="nav-link">$599</a>
+          </div>
+        </div>
+        
+        <div class="card c1 c14">
+          <div class="img4"></div>
+            <!-- <img class="card-img-bottom" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_MasterClosedBracket1_Monogram_May20204494_1366x911_crop_center.jpg.webp?v=1623682600" alt="Card image" style="width:100%"> -->
+            <div class="ci card-body d-flex">
+                <div>
+                <h4 class="card-title">VIDEO CONSOLE</h4>
+                <p class="card-text">Ideal for video & film.Adoptable for any workflow.</p>
+                </div>
+            <a href="#" class="nav-link">$899</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="ps ps3">
+        <p>PRE-ORDER</p>
+      </div>
+      <div class="ps ps4">
+        <p>PRE-ORDER</p>
+      </div>
+
+      <div class="container-fluid mt-5">
+        <img src="https://monogramcc.com/static/fb6b98aa90bbce383e12a09c50936e96/9ee2a/shop-banner-module.webp" alt="" width="100%" height="500px">
+      </div>
+      <div class="st">
+        <h1>CREATE YOUR OWN CONSOLE</h1>
+        <p class="stp">Add-on to make it perfect.</p>
+      </div>
+
+      <div class="container mt-5 d-flex justify-content-around">
+        <div class="card cb1">
+          <div class="img5"></div>
+              <!-- <img class="card-img-bottom" src="https://cdn.shopify.com/s/files/1/0974/7950/products/20221018_MonogramCC_Case_06_1366x911_crop_center.jpg.webp?v=1666726898" alt="Card image" style="width:100%; height: 300px;"> -->
+          <div class="ci card-body d-flex">
+            <div>
+              <h5 class="card-title">MONOGRAM</h5>
+               <h5 class="card-text">CARING CASE</h5>
+            </div>
+            <a href="#" class="nav-link">$59</a>
+          </div>
+        </div>
+        
+          <div class="card cb1">
+            <div class="img6"></div>
+              <!-- <img class="card-img-bottom" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_CoreBracket1_Monogram_May20204545_ccb8b10a-0772-448b-9857-a14fa83bd5b7_1366x911_crop_center.jpg.webp?v=1593651640" alt="Card image" style="width:100%; height: 300px;"> -->
+              <div class="ci card-body d-flex">
+                  <div>
+                  <h5 class="card-title">MONOGRAM</h5>
+                  <h5 class="card-text">CORE</h5>
+                  </div>
+              <a href="#" class="nav-link">$159</a>
+              </div>
+          </div>
+
+          <div class="card cb1">
+            <div class="img7"></div>
+              <!-- <img class="card-img-bottom" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_SliderHeroBracket1_Monogram_May20204536_8b0e1987-0315-491e-9951-a9404031b55a_1366x911_crop_center.jpg.webp?v=1593651879" alt="Card image" style="width:100%; height: 300px;"> -->
+              <div class="ci card-body d-flex">
+                  <div>
+                  <h5 class="card-title">SLIDER MODULE</h5>
+                  </div>
+              <a href="#" class="nav-link">$159</a>
+              </div>
+          </div>
+
+        </div>
+      
+        <div class="container mt-5 d-flex justify-content-around">
+
+          <div class="card cb1">
+            <div class="img8"></div>
+              <!-- <img class="card-img-bottom" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_KeysBracket1_Monogram_May20204548_c26eef0c-c95c-40e6-8fd3-abe1f59abfcd_1366x911_crop_center.jpg.webp?v=1593651769" alt="Card image" style="width:100%; height: 300px;"> -->
+              <div class="ci card-body d-flex">
+                  <div>
+                  <h5 class="card-title">ESSENTIAL KEYS</h5>
+                  <h5 class="card-text">MODULE</h5>
+                  </div>
+              <a href="#" class="nav-link">$129</a>
+              </div>
+          </div>
+        
+          <div class="card cb1">
+            <div class="img9"></div>
+              <!-- <img class="card-img-bottom" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_OrbiterBracket1_Monogram_May20204542_50105ec2-8b68-4ed5-ac4e-ac261c36459c_1366x911_crop_center.jpg.webp?v=1593651849" alt="Card image" style="width:100%; height: 300px;"> -->
+              <div class="ci card-body d-flex">
+                  <div>
+                  <h5 class="card-title">ORBITER MPDULE</h5>
+                  </div>
+              <a href="#" class="nav-link">$159</a>
+              </div>
+          </div>
+
+          <div class="card cb1">
+            <div class="img10"></div>
+              <!-- <img class="card-img-bottom" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_DialHeroBracket1_Monogram_May20204539_375e79fb-32f0-447b-b606-3dd0ac8318f6_1366x911_crop_center.jpg.webp?v=1593651701" alt="Card image" style="width:100%; height: 300px;"> -->
+              <div class="ci card-body d-flex">
+                  <div>
+                  <h5 class="card-title">DIAL MODULE</h5>
+                  </div>
+              <a href="#" class="nav-link">$129</a>
+              </div>
+          </div>
+
+        </div>
+    
+      <div class="d-flex justify-content-around">
+        <div class="container mt-5 d-flex justify-content-around">
+          <div class="card cb2">
+              <img class="card-img-bottom" src="https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-midi-final-august_1366x984_crop_center.jpg.webp?v=1661440892" alt="Card image" style="width:100%; height: 300px;">
+              <div class="ci card-body d-flex">
+                  <div>
+                  <h5 class="card-title">CONSOLE PACK:</h5>
+                  <h5 class="card-text">AUDIO</h5>
+                  </div>
+              <a href="#" class="nav-link">$29</a>
+              </div>
+          </div>
+        
+          <div class="card cb2">
+              <img class="card-img-bottom" src="https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-photo-final-august_1366x984_crop_center.jpg.webp?v=1661440997" alt="Card image" style="width:100%; height: 300px;">
+              <div class="ci card-body d-flex">
+                  <div>
+                  <h5 class="card-title">CONSOLE PACK:</h5>
+                  <h5 class="card-title">PHOTO</h5>
+                  </div>
+              <a href="#" class="nav-link">$39</a>
+              </div>
+          </div>
+
+          <div class="card cb2">
+              <img class="card-img-bottom" src="https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-video-final-august_1366x984_crop_center.jpg.webp?v=1661441054" alt="Card image" style="width:100%; height: 300px;">
+              <div class="ci card-body d-flex">
+                  <div>
+                  <h5 class="card-title">CONSOLE PACK:</h5>
+                  <h5 class="card-title">VIDEO</h5> 
+                  </div>
+              <a href="#" class="nav-link">$69</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card cb3 mt-3">
+        <div class="img11"></div>
+          <!-- <img class="card-img-bottom" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Care-updated-traveler_1366x904_crop_center.jpg.webp?v=1633483052" alt="Card image" style="width:100%; height: 300px;"> -->
+          <div class="ci card-body d-flex">
+            <div>
+              <h5 class="card-title">MONOGRAM</h5>
+              <h5 class="card-title">CARE</h5>
+            </div>
+            <a href="#" class="nav-link">$19-$129</a>
+          </div>
+      </div>
+
+      <div class="ps ps5">
+        <p>PRE-ORDER</p>
+      </div>
+      <div class="ps ps6">
+        <p>PRE-ORDER</p>
+      </div>
+      <div class="ps ps7">
+        <p>PRE-ORDER</p>
+      </div>
+      <div class="ps ps8">
+        <p>PRE-ORDER</p>
+      </div>
+      <div class="ps ps9">
+        <p>PRE-ORDER</p>
+      </div>
+      <div class="ps ps10">
+        <p>PRE-ORDER</p>
+      </div>
+
+      <div class="ls mt-5 d-flex justify-content-around">
+        <div class="mt-5 ms-5 col-2">
+          <h6>MONOGRAM</h6>
+          <p class="sp">305 King St. W.<br>Suite 502<br>Kitchener, ON<br>Canada</p>
+        </div>
+        <div class="mt-5 col-2">
+          <h6>QUICK LINKS</h6>
+          <a class="sp co nav-link" href="javascript:void(0)">Home<br>How its works<br>SHOP<br>Download</a>
+        </div>
+        <div class="mt-5 col-2">
+          <h6>HELP</h6>
+          <a class="sp co nav-link" href="javascript:void(0)">FAQs<br>Support Center<br>Shipping and Sales</a>
+        </div>
+        <div class="mt-5 col-2">
+          <h6>INFORMATION</h6>
+          <a class="sp co nav-link" href="javascript:void(0)">About Us<br>Work with us<br>Privacy Policy<br>Terms of Use<br>Terms of Sale<br>Press Kit</a>
+        </div>
+        <div class="mt-5 me-5 col-3">
+          <h6>SUBSCRIBE TO MONOGRAM</h6>
+          <a class="sp co nav-link" href="javascript:void(0)">Master productivity with Creative Console and get all the latest Monogram news.</a>
+
+          <div class="e d-flex" style="justify-content: space-between;">
+            <div class="e1">
+              <label for="search"></label><br>
+              <input type="search" id="search" placeholder="Email Address" name="username" style="background-color: #1a2456; border-color: #efc2b3; font-weight: 500;"><br>
+            </div>
+            <div class="e2">
+              <input class="bn"  type="submit" name="username">
+            </div>
+          </div>
+          <div class="icon mt-3 d-flex">
+              <div class="col-1">
+                <img src="https://freelogopng.com/images/all_img/1658586823instagram-logo-transparent.png" alt="" width="20px" height="20px">
+              </div>
+              <div class="col-1">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/016/716/486/small/twitter-icon-free-png.png" alt="" width="20px" height="20px">
+              </div>
+              <div class="col-1">
+                <img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" alt="" width="20px" height="20px">
+              </div>
+              <div class="col-1">
+                <img src="https://www.freepnglogos.com/uploads/youtube-play-red-logo-png-transparent-background-6.png" alt="" width="20px" height="20px">
+              </div>
+            </div>
+          <p class="mt-3">© Monogram 2023</p>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
